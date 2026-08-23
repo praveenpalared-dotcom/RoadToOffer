@@ -1,0 +1,14 @@
+{
+  "name": "roadtooffer-root",
+  "version": "1.0.0",
+  "description": "DSA Progress Tracking Platform",
+  "main": "server.js",
+  "scripts": {
+    "setup": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "dev": "node frontend/start-dev.cjs",
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

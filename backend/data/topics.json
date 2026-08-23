@@ -1,0 +1,677 @@
+[
+  {
+    "_id": "tlggaf8i0",
+    "name": "C++",
+    "slug": "cpp",
+    "phase": "Language",
+    "track": "TRACK A — PROGRAMMING FOUNDATION",
+    "order": 0,
+    "createdAt": "2026-08-09T20:16:24.388Z"
+  },
+  {
+    "_id": "t9hljdnok",
+    "name": "Python",
+    "slug": "python",
+    "phase": "Language",
+    "track": "TRACK A — PROGRAMMING FOUNDATION",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.389Z"
+  },
+  {
+    "_id": "s5it1w60v",
+    "name": "JavaScript",
+    "slug": "javascript-basics",
+    "phase": "Language",
+    "track": "TRACK A — PROGRAMMING FOUNDATION",
+    "order": 2,
+    "createdAt": "2026-08-09T20:16:24.389Z"
+  },
+  {
+    "_id": "e64lrkstp",
+    "name": "STL",
+    "slug": "stl",
+    "phase": "Core",
+    "track": "TRACK A — PROGRAMMING FOUNDATION",
+    "order": 3,
+    "createdAt": "2026-08-09T20:16:24.389Z"
+  },
+  {
+    "_id": "uedc5w6sw",
+    "name": "Time Complexity",
+    "slug": "time-complexity",
+    "phase": "Complexity",
+    "track": "TRACK A — PROGRAMMING FOUNDATION",
+    "order": 4,
+    "createdAt": "2026-08-09T20:16:24.389Z"
+  },
+  {
+    "_id": "utxwwxs8y",
+    "name": "Space Complexity",
+    "slug": "space-complexity",
+    "phase": "Complexity",
+    "track": "TRACK A — PROGRAMMING FOUNDATION",
+    "order": 5,
+    "createdAt": "2026-08-09T20:16:24.390Z"
+  },
+  {
+    "_id": "bp7x66srq",
+    "name": "Git",
+    "slug": "git",
+    "phase": "Tools",
+    "track": "TRACK A — PROGRAMMING FOUNDATION",
+    "order": 6,
+    "createdAt": "2026-08-09T20:16:24.390Z"
+  },
+  {
+    "_id": "uqvjtf6ax",
+    "name": "GitHub",
+    "slug": "github",
+    "phase": "Tools",
+    "track": "TRACK A — PROGRAMMING FOUNDATION",
+    "order": 7,
+    "createdAt": "2026-08-09T20:16:24.391Z"
+  },
+  {
+    "_id": "ump7wt6f3",
+    "name": "Linux basics",
+    "slug": "linux-basics",
+    "phase": "Tools",
+    "track": "TRACK A — PROGRAMMING FOUNDATION",
+    "order": 8,
+    "createdAt": "2026-08-09T20:16:24.391Z"
+  },
+  {
+    "_id": "nxvr640f8",
+    "name": "Conditionals",
+    "slug": "conditionals",
+    "phase": "Foundation",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 0,
+    "createdAt": "2026-08-09T20:16:24.391Z"
+  },
+  {
+    "_id": "sto8cft23",
+    "name": "Loops",
+    "slug": "loops",
+    "phase": "Foundation",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.391Z"
+  },
+  {
+    "_id": "oqyppdo2n",
+    "name": "Arithmetic",
+    "slug": "arithmetic",
+    "phase": "Foundation",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 2,
+    "createdAt": "2026-08-09T20:16:24.392Z"
+  },
+  {
+    "_id": "m0rasozxz",
+    "name": "Number Properties",
+    "slug": "number-properties",
+    "phase": "Foundation",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 3,
+    "createdAt": "2026-08-09T20:16:24.392Z"
+  },
+  {
+    "_id": "7eo000f9g",
+    "name": "Strings Basics",
+    "slug": "strings-basics",
+    "phase": "Foundation",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 4,
+    "createdAt": "2026-08-09T20:16:24.392Z"
+  },
+  {
+    "_id": "e7nhnntzk",
+    "name": "Arrays Core",
+    "slug": "arrays-core",
+    "phase": "Core",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 5,
+    "createdAt": "2026-08-09T20:16:24.393Z"
+  },
+  {
+    "_id": "exqzov0fu",
+    "name": "Searching",
+    "slug": "searching",
+    "phase": "Core",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 6,
+    "createdAt": "2026-08-09T20:16:24.393Z"
+  },
+  {
+    "_id": "xx22niemq",
+    "name": "Sorting",
+    "slug": "sorting",
+    "phase": "Core",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 7,
+    "createdAt": "2026-08-09T20:16:24.394Z"
+  },
+  {
+    "_id": "i57ruemtx",
+    "name": "Frequency Counting",
+    "slug": "frequency-counting",
+    "phase": "Core",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 8,
+    "createdAt": "2026-08-09T20:16:24.394Z"
+  },
+  {
+    "_id": "6yon30sew",
+    "name": "Basic Two Pointers",
+    "slug": "basic-two-pointers",
+    "phase": "Core",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 9,
+    "createdAt": "2026-08-09T20:16:24.394Z"
+  },
+  {
+    "_id": "ayohb9nzf",
+    "name": "Advanced Strings",
+    "slug": "advanced-strings",
+    "phase": "Advanced",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 10,
+    "createdAt": "2026-08-09T20:16:24.395Z"
+  },
+  {
+    "_id": "n6flhf9v0",
+    "name": "Sliding Window",
+    "slug": "sliding-window-ct",
+    "phase": "Advanced",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 11,
+    "createdAt": "2026-08-09T20:16:24.395Z"
+  },
+  {
+    "_id": "yhc348gn5",
+    "name": "Hashing",
+    "slug": "hashing-ct",
+    "phase": "Advanced",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 12,
+    "createdAt": "2026-08-09T20:16:24.396Z"
+  },
+  {
+    "_id": "i2x313fkd",
+    "name": "Prefix Sum",
+    "slug": "prefix-sum-ct",
+    "phase": "Advanced",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 13,
+    "createdAt": "2026-08-09T20:16:24.396Z"
+  },
+  {
+    "_id": "6zdjp3cz6",
+    "name": "Advanced Arrays",
+    "slug": "advanced-arrays",
+    "phase": "Advanced",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 14,
+    "createdAt": "2026-08-09T20:16:24.396Z"
+  },
+  {
+    "_id": "bd9fltxc0",
+    "name": "Matrix Problems",
+    "slug": "matrix-problems",
+    "phase": "Advanced",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 15,
+    "createdAt": "2026-08-09T20:16:24.397Z"
+  },
+  {
+    "_id": "zoacegs8s",
+    "name": "Subarray Problems",
+    "slug": "subarray-problems",
+    "phase": "Advanced",
+    "track": "TRACK B — COMPUTATIONAL THINKING",
+    "order": 16,
+    "createdAt": "2026-08-09T20:16:24.398Z"
+  },
+  {
+    "_id": "l7bjtbi5m",
+    "name": "Mathematics",
+    "slug": "mathematics",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 0,
+    "createdAt": "2026-08-09T20:16:24.399Z"
+  },
+  {
+    "_id": "0q78s9n7v",
+    "name": "Arrays",
+    "slug": "arrays",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.400Z"
+  },
+  {
+    "_id": "tsfxvbvou",
+    "name": "Strings",
+    "slug": "strings",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 2,
+    "createdAt": "2026-08-09T20:16:24.400Z"
+  },
+  {
+    "_id": "vpybo3486",
+    "name": "Hashing",
+    "slug": "hashing",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 3,
+    "createdAt": "2026-08-09T20:16:24.401Z"
+  },
+  {
+    "_id": "2z8a66yii",
+    "name": "Two Pointers",
+    "slug": "two-pointers",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 4,
+    "createdAt": "2026-08-09T20:16:24.401Z"
+  },
+  {
+    "_id": "ndjr6higw",
+    "name": "Sliding Window",
+    "slug": "sliding-window",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 5,
+    "createdAt": "2026-08-09T20:16:24.401Z"
+  },
+  {
+    "_id": "2shz883c1",
+    "name": "Prefix Sum",
+    "slug": "prefix-sum",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 6,
+    "createdAt": "2026-08-09T20:16:24.402Z"
+  },
+  {
+    "_id": "zs8zqajrf",
+    "name": "Binary Search",
+    "slug": "binary-search",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 7,
+    "createdAt": "2026-08-09T20:16:24.403Z"
+  },
+  {
+    "_id": "vf0do47ib",
+    "name": "Stack",
+    "slug": "stack",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 8,
+    "createdAt": "2026-08-09T20:16:24.404Z"
+  },
+  {
+    "_id": "k0y8ddgdw",
+    "name": "Queue",
+    "slug": "queue",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 9,
+    "createdAt": "2026-08-09T20:16:24.405Z"
+  },
+  {
+    "_id": "6rckl3u9h",
+    "name": "Linked List",
+    "slug": "linked-list",
+    "phase": "Foundation",
+    "track": "TRACK C — DSA",
+    "order": 10,
+    "createdAt": "2026-08-09T20:16:24.406Z"
+  },
+  {
+    "_id": "sj7wluucr",
+    "name": "Recursion & Backtracking",
+    "slug": "recursion-backtracking",
+    "phase": "Problem Solving",
+    "track": "TRACK C — DSA",
+    "order": 11,
+    "createdAt": "2026-08-09T20:16:24.407Z"
+  },
+  {
+    "_id": "0vtkpmkgf",
+    "name": "Greedy",
+    "slug": "greedy",
+    "phase": "Problem Solving",
+    "track": "TRACK C — DSA",
+    "order": 12,
+    "createdAt": "2026-08-09T20:16:24.407Z"
+  },
+  {
+    "_id": "gcrq5zw01",
+    "name": "Bit Manipulation",
+    "slug": "bit-manipulation",
+    "phase": "Problem Solving",
+    "track": "TRACK C — DSA",
+    "order": 13,
+    "createdAt": "2026-08-09T20:16:24.408Z"
+  },
+  {
+    "_id": "y0wpsbzt5",
+    "name": "Binary Trees",
+    "slug": "binary-trees",
+    "phase": "Trees",
+    "track": "TRACK C — DSA",
+    "order": 14,
+    "createdAt": "2026-08-09T20:16:24.409Z"
+  },
+  {
+    "_id": "dbfvl0hqa",
+    "name": "Binary Search Trees",
+    "slug": "bst",
+    "phase": "Trees",
+    "track": "TRACK C — DSA",
+    "order": 15,
+    "createdAt": "2026-08-09T20:16:24.410Z"
+  },
+  {
+    "_id": "2xsz05sdo",
+    "name": "Heaps / Priority Queues",
+    "slug": "heaps",
+    "phase": "Trees",
+    "track": "TRACK C — DSA",
+    "order": 16,
+    "createdAt": "2026-08-09T20:16:24.410Z"
+  },
+  {
+    "_id": "jt03kkmeb",
+    "name": "Graph BFS/DFS",
+    "slug": "graph-traversal",
+    "phase": "Graphs",
+    "track": "TRACK C — DSA",
+    "order": 17,
+    "createdAt": "2026-08-09T20:16:24.411Z"
+  },
+  {
+    "_id": "3cwl8qz5w",
+    "name": "Shortest Paths & MST",
+    "slug": "shortest-paths",
+    "phase": "Graphs",
+    "track": "TRACK C — DSA",
+    "order": 18,
+    "createdAt": "2026-08-09T20:16:24.411Z"
+  },
+  {
+    "_id": "kqg9x00qq",
+    "name": "1D DP",
+    "slug": "1d-dp",
+    "phase": "Dynamic Programming",
+    "track": "TRACK C — DSA",
+    "order": 19,
+    "createdAt": "2026-08-09T20:16:24.411Z"
+  },
+  {
+    "_id": "cmsqyqh1j",
+    "name": "2D/Grid DP",
+    "slug": "2d-dp",
+    "phase": "Dynamic Programming",
+    "track": "TRACK C — DSA",
+    "order": 20,
+    "createdAt": "2026-08-09T20:16:24.412Z"
+  },
+  {
+    "_id": "s21mme7fk",
+    "name": "Knapsack & Subsequences",
+    "slug": "knapsack",
+    "phase": "Dynamic Programming",
+    "track": "TRACK C — DSA",
+    "order": 21,
+    "createdAt": "2026-08-09T20:16:24.413Z"
+  },
+  {
+    "_id": "ahaj9k9og",
+    "name": "Tries",
+    "slug": "tries",
+    "phase": "Advanced",
+    "track": "TRACK C — DSA",
+    "order": 22,
+    "createdAt": "2026-08-09T20:16:24.413Z"
+  },
+  {
+    "_id": "smlbi1cp6",
+    "name": "Segment Trees",
+    "slug": "segment-trees",
+    "phase": "Advanced",
+    "track": "TRACK C — DSA",
+    "order": 23,
+    "createdAt": "2026-08-09T20:16:24.414Z"
+  },
+  {
+    "_id": "otgwnci6s",
+    "name": "OOP",
+    "slug": "oop",
+    "phase": "Core",
+    "track": "TRACK D — CS FUNDAMENTALS",
+    "order": 0,
+    "createdAt": "2026-08-09T20:16:24.414Z"
+  },
+  {
+    "_id": "ft0bjmysa",
+    "name": "DBMS",
+    "slug": "dbms",
+    "phase": "Core",
+    "track": "TRACK D — CS FUNDAMENTALS",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.414Z"
+  },
+  {
+    "_id": "ccjyqioib",
+    "name": "Operating Systems",
+    "slug": "os",
+    "phase": "Core",
+    "track": "TRACK D — CS FUNDAMENTALS",
+    "order": 2,
+    "createdAt": "2026-08-09T20:16:24.415Z"
+  },
+  {
+    "_id": "b0vxbuz0u",
+    "name": "Computer Networks",
+    "slug": "cn",
+    "phase": "Core",
+    "track": "TRACK D — CS FUNDAMENTALS",
+    "order": 3,
+    "createdAt": "2026-08-09T20:16:24.415Z"
+  },
+  {
+    "_id": "ku3ld1wep",
+    "name": "Computer Architecture",
+    "slug": "ca",
+    "phase": "Core",
+    "track": "TRACK D — CS FUNDAMENTALS",
+    "order": 4,
+    "createdAt": "2026-08-09T20:16:24.416Z"
+  },
+  {
+    "_id": "7afteb7vr",
+    "name": "Data Representation",
+    "slug": "data-rep",
+    "phase": "Core",
+    "track": "TRACK D — CS FUNDAMENTALS",
+    "order": 5,
+    "createdAt": "2026-08-09T20:16:24.417Z"
+  },
+  {
+    "_id": "ib3c1ky20",
+    "name": "Software Engineering",
+    "slug": "se",
+    "phase": "Core",
+    "track": "TRACK D — CS FUNDAMENTALS",
+    "order": 6,
+    "createdAt": "2026-08-09T20:16:24.418Z"
+  },
+  {
+    "_id": "4xj9f7zso",
+    "name": "SQL",
+    "slug": "sql",
+    "phase": "Core",
+    "track": "TRACK D — CS FUNDAMENTALS",
+    "order": 7,
+    "createdAt": "2026-08-09T20:16:24.418Z"
+  },
+  {
+    "_id": "7f15ufutc",
+    "name": "HTML & CSS",
+    "slug": "html-css",
+    "phase": "Basics",
+    "track": "TRACK E — WEB DEVELOPMENT",
+    "order": 0,
+    "createdAt": "2026-08-09T20:16:24.419Z"
+  },
+  {
+    "_id": "0mvw9ngry",
+    "name": "JavaScript DOM & Async",
+    "slug": "js-dom-async",
+    "phase": "Basics",
+    "track": "TRACK E — WEB DEVELOPMENT",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.419Z"
+  },
+  {
+    "_id": "rqcgi2wob",
+    "name": "React",
+    "slug": "react",
+    "phase": "Framework",
+    "track": "TRACK E — WEB DEVELOPMENT",
+    "order": 2,
+    "createdAt": "2026-08-09T20:16:24.420Z"
+  },
+  {
+    "_id": "ddnuzfd9v",
+    "name": "State Management",
+    "slug": "state-management",
+    "phase": "Framework",
+    "track": "TRACK E — WEB DEVELOPMENT",
+    "order": 3,
+    "createdAt": "2026-08-09T20:16:24.421Z"
+  },
+  {
+    "_id": "scajnmsxy",
+    "name": "Node.js & Express",
+    "slug": "nodejs-express",
+    "phase": "Server",
+    "track": "TRACK F — BACKEND",
+    "order": 0,
+    "createdAt": "2026-08-09T20:16:24.422Z"
+  },
+  {
+    "_id": "le2t2103y",
+    "name": "REST APIs & Auth",
+    "slug": "rest-auth",
+    "phase": "Server",
+    "track": "TRACK F — BACKEND",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.423Z"
+  },
+  {
+    "_id": "wlyzrqyww",
+    "name": "PostgreSQL & ORMs",
+    "slug": "postgres-orm",
+    "phase": "Database",
+    "track": "TRACK F — BACKEND",
+    "order": 2,
+    "createdAt": "2026-08-09T20:16:24.424Z"
+  },
+  {
+    "_id": "kvh4u5q74",
+    "name": "Docker & CI/CD",
+    "slug": "docker-cicd",
+    "phase": "DevOps",
+    "track": "TRACK G — CLOUD & DEVOPS",
+    "order": 0,
+    "createdAt": "2026-08-09T20:16:24.425Z"
+  },
+  {
+    "_id": "jfxtbdy8c",
+    "name": "AWS/Azure Basics",
+    "slug": "cloud-basics",
+    "phase": "Cloud",
+    "track": "TRACK G — CLOUD & DEVOPS",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.426Z"
+  },
+  {
+    "_id": "rvt32ai9b",
+    "name": "GenAI & LLMs",
+    "slug": "genai-llms",
+    "phase": "AI",
+    "track": "TRACK H — AI / GENAI",
+    "order": 0,
+    "createdAt": "2026-08-09T20:16:24.426Z"
+  },
+  {
+    "_id": "tqrti4njn",
+    "name": "RAG & Vector DBs",
+    "slug": "rag-vector",
+    "phase": "AI",
+    "track": "TRACK H — AI / GENAI",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.427Z"
+  },
+  {
+    "_id": "pnh170ebo",
+    "name": "AI Agents",
+    "slug": "ai-agents",
+    "phase": "AI",
+    "track": "TRACK H — AI / GENAI",
+    "order": 2,
+    "createdAt": "2026-08-09T20:16:24.428Z"
+  },
+  {
+    "_id": "q514pcoor",
+    "name": "Quantitative",
+    "slug": "quant",
+    "phase": "Aptitude",
+    "track": "TRACK I — APTITUDE",
+    "order": 0,
+    "createdAt": "2026-08-09T20:16:24.429Z"
+  },
+  {
+    "_id": "n7lv5wvdj",
+    "name": "Logical Reasoning",
+    "slug": "logical",
+    "phase": "Aptitude",
+    "track": "TRACK I — APTITUDE",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.429Z"
+  },
+  {
+    "_id": "0yibgo4jv",
+    "name": "Verbal",
+    "slug": "verbal",
+    "phase": "Aptitude",
+    "track": "TRACK I — APTITUDE",
+    "order": 2,
+    "createdAt": "2026-08-09T20:16:24.430Z"
+  },
+  {
+    "_id": "s0zr5hovw",
+    "name": "Resume & Portfolio",
+    "slug": "resume-portfolio",
+    "phase": "Preparation",
+    "track": "TRACK J — CAREER",
+    "order": 0,
+    "createdAt": "2026-08-09T20:16:24.430Z"
+  },
+  {
+    "_id": "dqz3uejxt",
+    "name": "Interviews & HR",
+    "slug": "interviews-hr",
+    "phase": "Preparation",
+    "track": "TRACK J — CAREER",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.431Z"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "lngqitjnb",
+    "userEmail": "candidate@roadtooffer.com",
+    "date": "2026-08-23",
+    "problemName": "LeetCode 2520 – Count the Digits That Divide a Number",
+    "xpEarned": 20,
+    "createdAt": "2026-08-23T09:42:10.073Z"
+  },
+  {
+    "_id": "8p8khtjc8",
+    "userEmail": "candidate@roadtooffer.com",
+    "date": "2026-08-23",
+    "problemName": "LeetCode 26 – Remove Duplicates from Sorted Array",
+    "xpEarned": 20,
+    "createdAt": "2026-08-23T09:42:28.955Z"
+  },
+  {
+    "_id": "swmmsrl1a",
+    "userEmail": "candidate@roadtooffer.com",
+    "date": "2026-08-23",
+    "problemName": "LeetCode 1 – Two Sum",
+    "xpEarned": 20,
+    "createdAt": "2026-08-23T09:42:30.256Z"
+  },
+  {
+    "_id": "u67yl9gz4",
+    "userEmail": "candidate@roadtooffer.com",
+    "date": "2026-08-23",
+    "problemName": "LeetCode 27 – Remove Element",
+    "xpEarned": 20,
+    "createdAt": "2026-08-23T09:42:31.684Z"
+  },
+  {
+    "_id": "u8faxxwdb",
+    "userEmail": "candidate@roadtooffer.com",
+    "date": "2026-08-23",
+    "problemName": "LeetCode 35 – Search Insert Position",
+    "xpEarned": 20,
+    "createdAt": "2026-08-23T09:42:33.168Z"
+  }
+]

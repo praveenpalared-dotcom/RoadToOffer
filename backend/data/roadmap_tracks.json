@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "mlhgdmi1x",
+    "name": "TRACK A — PROGRAMMING FOUNDATION",
+    "description": "Core programming concepts and basic tools.",
+    "order": 1,
+    "createdAt": "2026-08-09T20:16:24.381Z"
+  },
+  {
+    "_id": "itp8xerck",
+    "name": "TRACK B — COMPUTATIONAL THINKING",
+    "description": "Develop logical problem solving skills.",
+    "order": 2,
+    "createdAt": "2026-08-09T20:16:24.383Z"
+  },
+  {
+    "_id": "1g9z92k97",
+    "name": "TRACK C — DSA",
+    "description": "Data Structures and Algorithms for coding interviews.",
+    "order": 3,
+    "createdAt": "2026-08-09T20:16:24.384Z"
+  },
+  {
+    "_id": "hie1ukp4g",
+    "name": "TRACK D — CS FUNDAMENTALS",
+    "description": "Core computer science subjects.",
+    "order": 4,
+    "createdAt": "2026-08-09T20:16:24.384Z"
+  },
+  {
+    "_id": "kmurmoq5f",
+    "name": "TRACK E — WEB DEVELOPMENT",
+    "description": "Frontend engineering and frameworks.",
+    "order": 5,
+    "createdAt": "2026-08-09T20:16:24.385Z"
+  },
+  {
+    "_id": "207vc7ult",
+    "name": "TRACK F — BACKEND",
+    "description": "Server-side development and databases.",
+    "order": 6,
+    "createdAt": "2026-08-09T20:16:24.386Z"
+  },
+  {
+    "_id": "uc8xtum62",
+    "name": "TRACK G — CLOUD & DEVOPS",
+    "description": "Deployment, containers, and cloud infrastructure.",
+    "order": 7,
+    "createdAt": "2026-08-09T20:16:24.387Z"
+  },
+  {
+    "_id": "0wpxlpu0d",
+    "name": "TRACK H — AI / GENAI",
+    "description": "Artificial intelligence and generative models.",
+    "order": 8,
+    "createdAt": "2026-08-09T20:16:24.387Z"
+  },
+  {
+    "_id": "nrxg12x00",
+    "name": "TRACK I — APTITUDE",
+    "description": "Quantitative, logical, and verbal reasoning.",
+    "order": 9,
+    "createdAt": "2026-08-09T20:16:24.387Z"
+  },
+  {
+    "_id": "3xwfcz72i",
+    "name": "TRACK J — CAREER",
+    "description": "Resume building and interview preparation.",
+    "order": 10,
+    "createdAt": "2026-08-09T20:16:24.388Z"
+  }
+]
