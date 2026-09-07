@@ -76,9 +76,15 @@ async function startServer() {
     console.error('[SERVER] Database check failed, skipping auto-seed:', error.message);
   }
 
-  app.listen(PORT, () => {
-    console.log(`[SERVER] RoadToOffer backend running on http://localhost:${PORT}`);
-  });
+  // Only listen on a port if not running in Vercel Serverless environment
+  if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+      console.log(`[SERVER] RoadToOffer backend running on http://localhost:${PORT}`);
+    });
+  }
 }
 
 startServer();
+
+// Export the app for Vercel serverless deployment
+module.exports = app;
