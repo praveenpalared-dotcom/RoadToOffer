@@ -19,7 +19,8 @@ async function safeParseJson(response, fallbackMsg = 'Request failed') {
       throw new Error('Invalid JSON response received from server.');
     }
     if (!response.ok) {
-      throw new Error(data.message || `${fallbackMsg} (Status ${response.status})`);
+      const errorDetail = data.error ? `: ${data.error}` : '';
+      throw new Error((data.message || fallbackMsg) + errorDetail);
     }
     return data;
   } catch (err) {
