@@ -1,72 +1,72 @@
 [
   {
-    "_id": "mlhgdmi1x",
+    "_id": "qtroufffv",
     "name": "TRACK A — PROGRAMMING FOUNDATION",
     "description": "Core programming concepts and basic tools.",
     "order": 1,
-    "createdAt": "2026-08-09T20:16:24.381Z"
+    "createdAt": "2026-09-07T20:48:35.644Z"
   },
   {
-    "_id": "itp8xerck",
+    "_id": "vkhxo70bd",
     "name": "TRACK B — COMPUTATIONAL THINKING",
     "description": "Develop logical problem solving skills.",
     "order": 2,
-    "createdAt": "2026-08-09T20:16:24.383Z"
+    "createdAt": "2026-09-07T20:48:35.666Z"
   },
   {
-    "_id": "1g9z92k97",
+    "_id": "tbv4p5arq",
     "name": "TRACK C — DSA",
     "description": "Data Structures and Algorithms for coding interviews.",
     "order": 3,
-    "createdAt": "2026-08-09T20:16:24.384Z"
+    "createdAt": "2026-09-07T20:48:35.683Z"
   },
   {
-    "_id": "hie1ukp4g",
+    "_id": "tivxttgr9",
     "name": "TRACK D — CS FUNDAMENTALS",
     "description": "Core computer science subjects.",
     "order": 4,
-    "createdAt": "2026-08-09T20:16:24.384Z"
+    "createdAt": "2026-09-07T20:48:35.708Z"
   },
   {
-    "_id": "kmurmoq5f",
+    "_id": "fxlw5afno",
     "name": "TRACK E — WEB DEVELOPMENT",
     "description": "Frontend engineering and frameworks.",
     "order": 5,
-    "createdAt": "2026-08-09T20:16:24.385Z"
+    "createdAt": "2026-09-07T20:48:35.726Z"
   },
   {
-    "_id": "207vc7ult",
+    "_id": "jdhjkhzhl",
     "name": "TRACK F — BACKEND",
     "description": "Server-side development and databases.",
     "order": 6,
-    "createdAt": "2026-08-09T20:16:24.386Z"
+    "createdAt": "2026-09-07T20:48:35.745Z"
   },
   {
-    "_id": "uc8xtum62",
+    "_id": "agtfy0w15",
     "name": "TRACK G — CLOUD & DEVOPS",
     "description": "Deployment, containers, and cloud infrastructure.",
     "order": 7,
-    "createdAt": "2026-08-09T20:16:24.387Z"
+    "createdAt": "2026-09-07T20:48:35.765Z"
   },
   {
-    "_id": "0wpxlpu0d",
+    "_id": "yqpu9130r",
     "name": "TRACK H — AI / GENAI",
     "description": "Artificial intelligence and generative models.",
     "order": 8,
-    "createdAt": "2026-08-09T20:16:24.387Z"
+    "createdAt": "2026-09-07T20:48:35.784Z"
   },
   {
-    "_id": "nrxg12x00",
+    "_id": "233mbeubq",
     "name": "TRACK I — APTITUDE",
     "description": "Quantitative, logical, and verbal reasoning.",
     "order": 9,
-    "createdAt": "2026-08-09T20:16:24.387Z"
+    "createdAt": "2026-09-07T20:48:35.802Z"
   },
   {
-    "_id": "3xwfcz72i",
+    "_id": "xdx53ijb3",
     "name": "TRACK J — CAREER",
     "description": "Resume building and interview preparation.",
     "order": 10,
-    "createdAt": "2026-08-09T20:16:24.388Z"
+    "createdAt": "2026-09-07T20:48:35.826Z"
   }
 ]
