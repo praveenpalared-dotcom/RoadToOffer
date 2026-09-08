@@ -45,7 +45,7 @@ const topics = [
   { name: 'Matrix Problems', slug: 'matrix-problems', phase: 'Advanced', track: 'TRACK B — COMPUTATIONAL THINKING', order: 15 },
   { name: 'Subarray Problems', slug: 'subarray-problems', phase: 'Advanced', track: 'TRACK B — COMPUTATIONAL THINKING', order: 16 },
 
-  // TRACK C (Existing DSA)
+  // TRACK C
   { name: 'Mathematics', slug: 'mathematics', phase: 'Foundation', track: 'TRACK C — DSA', order: 0 },
   { name: 'Arrays', slug: 'arrays', phase: 'Foundation', track: 'TRACK C — DSA', order: 1 },
   { name: 'Strings', slug: 'strings', phase: 'Foundation', track: 'TRACK C — DSA', order: 2 },
@@ -86,12 +86,12 @@ const topics = [
   { name: 'JavaScript DOM & Async', slug: 'js-dom-async', phase: 'Basics', track: 'TRACK E — WEB DEVELOPMENT', order: 1 },
   { name: 'React', slug: 'react', phase: 'Framework', track: 'TRACK E — WEB DEVELOPMENT', order: 2 },
   { name: 'State Management', slug: 'state-management', phase: 'Framework', track: 'TRACK E — WEB DEVELOPMENT', order: 3 },
-  
+
   // TRACK F
   { name: 'Node.js & Express', slug: 'nodejs-express', phase: 'Server', track: 'TRACK F — BACKEND', order: 0 },
   { name: 'REST APIs & Auth', slug: 'rest-auth', phase: 'Server', track: 'TRACK F — BACKEND', order: 1 },
   { name: 'PostgreSQL & ORMs', slug: 'postgres-orm', phase: 'Database', track: 'TRACK F — BACKEND', order: 2 },
-  
+
   // TRACK G
   { name: 'Docker & CI/CD', slug: 'docker-cicd', phase: 'DevOps', track: 'TRACK G — CLOUD & DEVOPS', order: 0 },
   { name: 'AWS/Azure Basics', slug: 'cloud-basics', phase: 'Cloud', track: 'TRACK G — CLOUD & DEVOPS', order: 1 },
@@ -117,6 +117,7 @@ const templateProblems = leetcodeBank;
 
 function isPreloadedTitle(name) {
   if (!name) return false;
+
   return preloadedSolvedTitles.some(title =>
     name.toLowerCase().trim() === title.toLowerCase().trim()
   );
@@ -124,21 +125,30 @@ function isPreloadedTitle(name) {
 
 // Function to populate problems for a user email with initial Not Started status
 async function initializeUserProblemsAndStats(email) {
-  // 1. Delete current user problems and activity logs for this user
+  console.log(`[SEED] Initializing problems for ${email}...`);
+
+  // Delete existing user data in parallel.
   try {
-    await Problem.deleteMany({ userEmail: email });
-    await ActivityLog.deleteMany({ userEmail: email });
-  } catch (e) {}
+    await Promise.all([
+      Problem.deleteMany({ userEmail: email }),
+      ActivityLog.deleteMany({ userEmail: email })
+    ]);
+  } catch (e) {
+    console.error('[SEED] Cleanup failed:', e.message);
+  }
 
-  // 2. Create problems for this user, starting as Not Started
-  for (const prob of templateProblems) {
-    const xp = prob.xp || (prob.difficulty === 'Hard' ? 100 : prob.difficulty === 'Medium' ? 50 : 20);
+  // Prepare all problems in memory first.
+  const userProblems = templateProblems.map((prob) => {
+    const xp =
+      prob.xp ||
+      (prob.difficulty === 'Hard'
+        ? 100
+        : prob.difficulty === 'Medium'
+          ? 50
+          : 20);
 
-    await Problem.create({
-      name: prob.name,
-      difficulty: prob.difficulty,
-      pattern: prob.pattern || '',
-      platform: prob.platform || 'LeetCode',
+    return {
+      ...prob,
       status: 'Not Started',
       notes: '',
       userCode: {},
@@ -146,17 +156,28 @@ async function initializeUserProblemsAndStats(email) {
       revisionSchedule: 'None',
       lastSolved: '',
       timesRevised: 0,
-      companyTags: prob.companyTags || [],
-      solutionLink: prob.solutionLink || '',
-      topicSlug: prob.topicSlug,
       userEmail: email,
       isFavorite: false,
       xp
-    });
+    };
+  });
+
+  // Insert all problems in one database operation.
+  // This is much faster than awaiting Problem.create() for every problem.
+  if (userProblems.length > 0) {
+    if (typeof Problem.insertMany === 'function') {
+      await Problem.insertMany(userProblems, { ordered: false });
+    } else {
+      // Compatibility fallback for the local JSON database adapter.
+      for (const problem of userProblems) {
+        await Problem.create(problem);
+      }
+    }
   }
 
-  // 3. Update user profile to clean initial state
+  // Reset the user's progress/profile.
   const user = await User.findOne({ email });
+
   if (user) {
     await User.updateOne(
       { email },
@@ -180,71 +201,94 @@ async function initializeUserProblemsAndStats(email) {
     );
   }
 
-  return { totalProblems: templateProblems.length };
+  console.log(
+    `[SEED] Initialized ${userProblems.length} problems for ${email}`
+  );
+
+  return {
+    totalProblems: userProblems.length
+  };
 }
 
 async function runSeed() {
   console.log('[SEED] Starting database seeding...');
-  
+
   // Clear existing topics & default template problems
   try {
     await Topic.deleteMany({});
     console.log('[SEED] Cleared existing topics.');
-  } catch(e) {}
+  } catch (e) { }
 
   try {
     await Problem.deleteMany({ userEmail: 'template' });
     console.log('[SEED] Cleared template problems.');
-  } catch(e) {}
+  } catch (e) { }
 
   // Seed tracks
   try {
     await RoadmapTrack.deleteMany({});
     console.log('[SEED] Cleared existing tracks.');
-  } catch(e) {}
+  } catch (e) { }
 
   for (const track of roadmapTracks) {
     await RoadmapTrack.create(track);
   }
+
   console.log(`[SEED] Seeded ${roadmapTracks.length} tracks successfully.`);
 
   // Seed topics
   for (const topic of topics) {
     await Topic.create(topic);
   }
+
   console.log(`[SEED] Seeded ${topics.length} topics successfully.`);
 
   // Seed problems under template userEmail
-  for (const problem of templateProblems) {
-    await Problem.create({
-      ...problem,
-      userEmail: 'template',
-      status: 'Not Started',
-      notes: '',
-      revisionSchedule: 'None',
-      lastSolved: '',
-      timesRevised: 0,
-      isFavorite: false
-    });
+  const templateUserProblems = templateProblems.map((problem) => ({
+    ...problem,
+    userEmail: 'template',
+    status: 'Not Started',
+    notes: '',
+    revisionSchedule: 'None',
+    lastSolved: '',
+    timesRevised: 0,
+    isFavorite: false
+  }));
+
+  if (templateUserProblems.length > 0) {
+    if (typeof Problem.insertMany === 'function') {
+      await Problem.insertMany(templateUserProblems, { ordered: false });
+    } else {
+      for (const problem of templateUserProblems) {
+        await Problem.create(problem);
+      }
+    }
   }
-  console.log(`[SEED] Seeded ${templateProblems.length} default template problems successfully.`);
+
+  console.log(
+    `[SEED] Seeded ${templateProblems.length} default template problems successfully.`
+  );
 
   // Seed/Update all existing users
   const users = await User.find({});
+
   for (const u of users) {
     await initializeUserProblemsAndStats(u.email);
-    console.log(`[SEED] Initialized clean problem list for user: ${u.email}`);
+    console.log(
+      `[SEED] Initialized clean problem list for user: ${u.email}`
+    );
   }
 
   // Pre-create demo candidate account if not exists
   const candidateEmail = 'candidate@roadtooffer.com';
   let candidateUser = await User.findOne({ email: candidateEmail });
-  
+
   if (!candidateUser) {
     console.log('[SEED] Pre-creating candidate demo user...');
+
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash('candidate123', salt);
-    
+
     await User.create({
       name: 'Candidate Demo',
       email: candidateEmail,
@@ -271,10 +315,16 @@ async function runSeed() {
 }
 
 if (require.main === module) {
-  runSeed().then(() => process.exit(0)).catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
+  runSeed()
+    .then(() => process.exit(0))
+    .catch(err => {
+      console.error(err);
+      process.exit(1);
+    });
 }
 
-module.exports = { runSeed, templateProblems, initializeUserProblemsAndStats };
+module.exports = {
+  runSeed,
+  templateProblems,
+  initializeUserProblemsAndStats
+};
